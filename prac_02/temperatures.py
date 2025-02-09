@@ -4,6 +4,7 @@ Q - Quit"""
 
 
 def main():
+    """main function"""
     print(MENU)
     choice = input(">>> ").upper()
     while choice != "Q":
@@ -19,12 +20,14 @@ def main():
 
 
 def convert_to_celsius():
+    """convert Fahrenheit to Celsius"""
     fahrenheit = float(input("Fahrenheit: "))
     celsius = 5 / 9 * (fahrenheit - 32)
     print(f"Result: {celsius:.2f} C")
 
 
 def convert_to_fahrenheit():
+    """convert Celsius to Fahrenheit"""
     celsius = float(input("Celsius: "))
     fahrenheit = celsius * 9.0 / 5 + 32
     print(f"Result: {fahrenheit:.2f} F")
