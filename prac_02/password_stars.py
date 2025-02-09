@@ -6,10 +6,10 @@ def main():
 
 def get_valid_password(min_length):
     password = input("Please enter your password: ")
-    if len(password) >= min_length:
-        return password
-    else:
+    while len(password) <= min_length:
         print(f"Password must be at least {min_length} characters long. Please try again.")
+        password = input("Please enter your password: ")
+    return password
 
 
 def print_password(password):
