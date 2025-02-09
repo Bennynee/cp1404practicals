@@ -2,9 +2,11 @@ import random
 
 
 def main():
+    """main function"""
     score = float(input("Enter score: "))
     result = determine_score(score)
     print(f"Result: {result}")
+
     random_score = random.uniform(0, 100)
     random_result = determine_score(random_score)
     print(f"\nRandom score: {random_score:.2f}")
