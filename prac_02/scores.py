@@ -12,6 +12,7 @@ def main():
 
 
 def determine_score(score):
+    """determine the result based on the score"""
     if score < 0 or score > 100:
         return "Invalid score"
     else:
